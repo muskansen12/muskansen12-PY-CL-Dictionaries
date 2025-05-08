@@ -9,7 +9,7 @@ def create_dict_from_lists(keys, values):
     :param values: A list of values for the dictionary.
     :return: The created dictionary.
     """
-    return 0
+    return dict(zip(keys, values))
 
 
 def clear_dict(my_dict):
@@ -19,7 +19,7 @@ def clear_dict(my_dict):
     :param my_dict: The dictionary to clear.
     """
     # write your code here
-
+    my_dict.clear()
 
 def copy_dict(my_dict):
     """
@@ -28,7 +28,7 @@ def copy_dict(my_dict):
     :param my_dict: The dictionary to copy.
     :return: A copy of the dictionary.
     """
-    return 0
+    return my_dict.copy()
 
 
 
@@ -42,7 +42,7 @@ def get_value(my_dict, key):
     :param key: The key to retrieve the value for.
     :return: The value associated with the specified key, or None if the key is not found.
     """
-    return 0
+    return my_dict.get(key)
 
 
 def get_items(my_dict):
@@ -53,7 +53,7 @@ def get_items(my_dict):
     :param my_dict: The dictionary.
     :return: A list of tuples containing key-value pairs.
     """
-    return 0
+    return list(my_dict.items())
 
 
 def get_keys(my_dict):
@@ -63,7 +63,7 @@ def get_keys(my_dict):
     :param my_dict: The dictionary.
     :return: A list of keys.
     """
-    return 0
+    return list(my_dict.keys())
 
 
 def remove_key(my_dict, key):
@@ -74,7 +74,7 @@ def remove_key(my_dict, key):
     :param key: The key to remove.
     :return: The value associated with the removed key, or None if the key is not found.
     """
-    return 0
+    return my_dict.pop(key, None)
 
 
 
@@ -85,4 +85,4 @@ def get_values(my_dict):
     :param my_dict: The dictionary.
     :return: A list of values.
     """
-    return 0
+    return list(my_dict.values())
